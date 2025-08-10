@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPerfect Graphix - Unlimited Professional Templates for Just ₹49/Month</title>
+    <meta name="description" content="Get unlimited professional social media templates for just ₹49/month. Trusted by 500+ businesses. Start today!">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sticky Header with Hamburger Menu -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">PixelPerfect Graphix</div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Slide-out Menu -->
+        <nav class="slide-menu" id="slideMenu">
+            <div class="menu-header">
+                <div class="logo">PixelPerfect Graphix</div>
+                <button class="menu-close" id="menuClose">&times;</button>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#home" class="menu-link">Home</a></li>
+                <li><a href="#gallery" class="menu-link">Templates</a></li>
+                <li><a href="#pricing" class="menu-link">Pricing</a></li>
+                <li><a href="#how-it-works" class="menu-link">About</a></li>
+                <li><a href="#faq" class="menu-link">Contact</a></li>
+            </ul>
+            <div class="menu-cta">
+                <button class="btn btn--primary" onclick="openModal()">Start Subscription</button>
+            </div>
+        </nav>
+        <div class="menu-overlay" id="menuOverlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-badge">✨ Trusted by 500+ Growing Businesses</div>
+            <h1 class="hero-title">Get Unlimited Professional Templates for Just ₹49/Month</h1>
+            <p class="hero-subtitle">Join 500+ growing businesses creating stunning social media content with our subscription-based template library. Cancel anytime, no questions asked.</p>
+            
+            <div class="hero-features">
+                <div class="feature-item">✓ 500+ Premium Templates</div>
+                <div class="feature-item">✓ Cancel Anytime</div>
+                <div class="feature-item">✓ New Templates Weekly</div>
+                <div class="feature-item">✓ Commercial License</div>
+            </div>
+
+            <div class="hero-cta">
+                <button class="btn btn--primary btn--lg" onclick="openModal()">Start Your Subscription Today</button>
+                <a href="#gallery" class="btn btn--outline btn--lg">Browse Templates</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats/Trust Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">Premium Templates</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50000">0</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">% Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution">
+        <div class="container">
+            <h2 class="section-title">Why Businesses Need Our Subscription</h2>
+            
+            <div class="problems-section">
+                <h3 class="subsection-title">Common Design Challenges</h3>
+                <div class="problems-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">💰</div>
+                        <h4>Expensive Design Costs</h4>
+                        <p>Paying ₹500-2000 per design quickly adds up to huge monthly expenses</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">⏰</div>
+                        <h4>Long Waiting Times</h4>
+                        <p>Waiting days for custom designs delays your marketing campaigns</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">🎯</div>
+                        <h4>Inconsistent Quality</h4>
+                        <p>Different designers mean inconsistent brand appearance</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">💡</div>
+                        <h4>Limited Creative Ideas</h4>
+                        <p>Running out of fresh ideas for engaging social media content</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="solution-arrow">⬇️</div>
+
+            <div class="solutions-section">
+                <h3 class="subsection-title">Our Solutions</h3>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <div class="solution-icon">🚀</div>
+                        <h4>Unlimited Templates</h4>
+                        <p>One low monthly fee for unlimited access to premium templates</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">⚡</div>
+                        <h4>Instant Downloads</h4>
+                        <p>Get templates immediately - no waiting, no delays</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">✨</div>
+                        <h4>Consistent Quality</h4>
+                        <p>All templates professionally designed with consistent branding</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">🔄</div>
+                        <h4>Fresh Content Weekly</h4>
+                        <p>New templates added every week to keep content fresh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Overview -->
+    <section class="features-overview">
+        <div class="container">
+            <h2 class="section-title">Key Advantages of Subscription Model</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💸</div>
+                    <h3>Save 80% on Design Costs</h3>
+                    <p class="feature-description">Why pay ₹500+ per design when unlimited templates cost just ₹49/month?</p>
+                    <div class="feature-highlight">₹500 vs ₹49</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Instant Access & Customization</h3>
+                    <p class="feature-description">Download immediately and customize with your brand colors, logo, and content</p>
+                    <div class="feature-highlight">0 Wait Time</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Professional Quality Guaranteed</h3>
+                    <p class="feature-description">Every template is created by professional designers and tested for engagement</p>
+                    <div class="feature-highlight">Pro Quality</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Canva Integration</h3>
+                    <p class="feature-description">All templates work seamlessly with Canva for easy editing and customization</p>
+                    <div class="feature-highlight">Canva Ready</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Plans -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="pricing-header">
+                <h2 class="section-title">Choose Your Perfect Plan</h2>
+                <p class="pricing-subtitle">All plans include commercial license and premium support</p>
+                <div class="pricing-calculator">
+                    <div class="calculator-text">See how much you save:</div>
+                    <div class="calculator-comparison">
+                        <span>Traditional Design: ₹500 × 10 designs = ₹5,000/month</span>
+                        <span>Our Subscription: ₹49/month for unlimited</span>
+                        <strong>You Save: ₹4,951/month (99% savings!)</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Monthly Plan -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">Monthly</h3>
+                    <div class="plan-price">₹49</div>
+                    <div class="plan-period">/month</div>
+                    <p class="plan-description">Perfect for small businesses just getting started</p>
+                    <ul class="plan-features">
+                        <li>100+ Premium Templates</li>
+                        <li>Basic Customization Tools</li>
+                        <li>Email Support</li>
+                        <li>HD Downloads</li>
+                        <li>Cancel Anytime</li>
+                        <li>Mobile Formats</li>
+                    </ul>
+                    <button class="btn btn--outline" onclick="selectPlan('monthly')">Start Monthly Plan</button>
+                </div>
+
+                <!-- Quarterly Plan (Most Popular) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3 class="plan-name">Quarterly</h3>
+                    <div class="plan-price">₹99</div>
+                    <div class="plan-period">/3 months</div>
+                    <div class="savings-badge">Save ₹48</div>
+                    <p class="plan-description">Most popular choice - Save 33% compared to monthly</p>
+                    <ul class="plan-features">
+                        <li>300+ Premium Templates</li>
+                        <li>Advanced Customization</li>
+                        <li>Priority Support</li>
+                        <li>Commercial License</li>
+                        <li>New Templates First</li>
+                        <li>All Device Formats</li>
+                    </ul>
+                    <button class="btn btn--primary" onclick="selectPlan('quarterly')">Choose Popular Plan</button>
+                </div>
+
+                <!-- Annual Plan -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">Annual</h3>
+                    <div class="plan-price">₹299</div>
+                    <div class="plan-period">/year</div>
+                    <div class="savings-badge">Save ₹289</div>
+                    <p class="plan-description">Best value - Save 49% and get premium benefits</p>
+                    <ul class="plan-features">
+                        <li>500+ Premium Templates</li>
+                        <li>Premium Customization</li>
+                        <li>Dedicated Support</li>
+                        <li>Commercial License</li>
+                        <li>Design Consultation</li>
+                        <li>Priority New Features</li>
+                    </ul>
+                    <button class="btn btn--outline" onclick="selectPlan('annual')">Get Best Value</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Preview Gallery -->
+    <section id="gallery" class="template-gallery">
+        <div class="container">
+            <h2 class="section-title">Template Preview Gallery</h2>
+            
+            <!-- Category Filter -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">All Templates</button>
+                <button class="filter-btn" data-category="instagram">Instagram Posts</button>
+                <button class="filter-btn" data-category="facebook">Facebook Covers</button>
+                <button class="filter-btn" data-category="linkedin">LinkedIn Banners</button>
+                <button class="filter-btn" data-category="stories">Stories</button>
+            </div>
+
+            <!-- Template Grid -->
+            <div class="templates-grid">
+                <div class="template-item" data-category="instagram">
+                    <div class="template-preview">
+                        <div class="template-placeholder">Instagram Post Template</div>
+                        <div class="template-overlay">
+                            <button class="btn btn--sm" onclick="previewTemplate('instagram-1')">Preview</button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h4>Modern Instagram Post</h4>
+                        <p>Perfect for business announcements</p>
+                    </div>
+                </div>
+                
+                <div class="template-item" data-category="facebook">
+                    <div class="template-preview">
+                        <div class="template-placeholder">Facebook Cover Template</div>
+                        <div class="template-overlay">
+                            <button class="btn btn--sm" onclick="previewTemplate('facebook-1')">Preview</button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h4>Professional Facebook Cover</h4>
+                        <p>Brand-focused design</p>
+                    </div>
+                </div>
+                
+                <div class="template-item" data-category="linkedin">
+                    <div class="template-preview">
+                        <div class="template-placeholder">LinkedIn Banner Template</div>
+                        <div class="template-overlay">
+                            <button class="btn btn--sm" onclick="previewTemplate('linkedin-1')">Preview</button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h4>Corporate LinkedIn Banner</h4>
+                        <p>Professional networking focus</p>
+                    </div>
+                </div>
+                
+                <div class="template-item" data-category="stories">
+                    <div class="template-preview">
+                        <div class="template-placeholder">Story Template</div>
+                        <div class="template-overlay">
+                            <button class="btn btn--sm" onclick="previewTemplate('story-1')">Preview</button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h4>Engaging Story Design</h4>
+                        <p>Perfect for daily posts</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-cta">
+                <p>Want to see all 5000+ templates?</p>
+                <button class="btn btn--primary" onclick="openModal()">Start Your Subscription</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How Our Service Works</h2>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Choose Your Plan</h3>
+                        <p>Select the subscription plan that best fits your business needs and budget</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Browse & Select</h3>
+                        <p>Access our extensive library and choose from hundreds of professional templates</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Customize & Brand</h3>
+                        <p>Edit templates with your brand colors, logo, and content using Canva</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Download & Post</h3>
+                        <p>Get high-quality files ready for all social platforms and start posting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Detailed Benefits & Comparison</h2>
+            <div class="benefits-comparison">
+                <div class="benefit-item">
+                    <h3>Unlimited Downloads</h3>
+                    <p>No restrictions on how many templates you can download and use</p>
+                    <div class="comparison">
+                        <span class="others">Others: ₹500 per design</span>
+                        <span class="us">Us: Unlimited for ₹49</span>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <h3>Commercial License Included</h3>
+                    <p>Use templates for client work and commercial purposes without extra fees</p>
+                    <div class="comparison">
+                        <span class="others">Others: Extra ₹200 for license</span>
+                        <span class="us">Us: Included FREE</span>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <h3>Weekly Fresh Content</h3>
+                    <p>New templates added every week to keep your content fresh and trending</p>
+                    <div class="comparison">
+                        <span class="others">Others: Static library</span>
+                        <span class="us">Us: Growing weekly</span>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <h3>Priority Customer Support</h3>
+                    <p>Get help when you need it with our dedicated customer success team</p>
+                    <div class="comparison">
+                        <span class="others">Others: Email only</span>
+                        <span class="us">Us: Chat, Email & Phone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Success Stories</h2>
+            
+            <!-- Testimonial Carousel -->
+            <div class="testimonial-carousel">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"PixelPerfect Graphix completely transformed our social media game. Our engagement increased by 300% and we save ₹15,000 every month on design costs!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RK</div>
+                            <div class="author-info">
+                                <h4>Rajesh Kumar</h4>
+                                <p class="author-title">Marketing Director</p>
+                                <p class="author-company">TechStart Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"The quality is outstanding and the variety is incredible. I was spending ₹25,000/month on designs. Now I get unlimited templates for just ₹99/quarter!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">PS</div>
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p class="author-title">Founder & CEO</p>
+                                <p class="author-company">Fashion Forward Boutique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Our brand looks consistent across all platforms now. The templates are so professional and easy to customize. Best investment for our marketing!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MA</div>
+                            <div class="author-info">
+                                <h4>Mohammed Ahmed</h4>
+                                <p class="author-title">Owner</p>
+                                <p class="author-company">Local Eats Restaurant Chain</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" onclick="prevTestimonial()">‹</button>
+                <div class="carousel-dots">
+                    <button class="dot active" onclick="showTestimonial(0)"></button>
+                    <button class="dot" onclick="showTestimonial(1)"></button>
+                    <button class="dot" onclick="showTestimonial(2)"></button>
+                </div>
+                <button class="carousel-btn next" onclick="nextTestimonial()">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I really cancel my subscription anytime?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can cancel your subscription at any time with just one click. No questions asked, no cancellation fees. You'll continue to have access until the end of your current billing period.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How many templates can I download each month?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There are no limits! All our plans include unlimited downloads. Whether you need 5 templates or 500, you can download as many as you want without any restrictions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Are these templates really professional quality?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Every template is created by professional designers with years of experience. We follow current design trends and best practices. If you're not satisfied with the quality, we offer a 7-day money-back guarantee.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I use these templates for my clients' businesses?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Our Quarterly and Annual plans include commercial licenses, allowing you to use templates for client work. The Monthly plan is for personal/single business use only.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How often do you add new templates?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We add 20-30 fresh templates every week across different categories - Instagram posts, Facebook covers, LinkedIn banners, stories, and more. You'll never run out of fresh content ideas!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer any guarantees?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a 7-day money-back guarantee on all plans. Try our service risk-free and if you're not completely satisfied, we'll refund your money, no questions asked.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What if I need help with customizing templates?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We provide comprehensive video tutorials, written guides, and our support team is available via chat and email to help you. Quarterly and Annual subscribers also get priority support.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I upgrade or downgrade my plan?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can upgrade or downgrade your plan at any time. Upgrades take effect immediately, and downgrades will take effect at the end of your current billing period.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Social Media?</h2>
+                <p>Join thousands of businesses already creating stunning content with our templates</p>
+                <div class="urgency-indicator">
+                    <span class="urgency-icon">🔥</span>
+                    <span>Limited Time: First month only ₹29 (Save ₹20)</span>
+                    <div class="countdown-timer" id="countdown">23:59:45 left</div>
+                </div>
+                <button class="btn btn--primary btn--xl" onclick="openModal()">Start Your Subscription Now</button>
+                <div class="guarantee-text">
+                    <span>🔒 7-day money-back guarantee</span>
+                    <span>⚡ Instant access</span>
+                    <span>🚫 No long-term commitment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PixelPerfect Graphix</h4>
+                    <p>Professional Social Media Templates for Growing Businesses</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#gallery">Templates</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Contact Support</a></li>
+                        <li><a href="#" target="_blank">Help Center</a></li>
+                        <li><a href="#" target="_blank">Video Tutorials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Privacy Policy</a></li>
+                        <li><a href="#" target="_blank">Terms of Service</a></li>
+                        <li><a href="#" target="_blank">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PixelPerfect Graphix. All rights reserved.</p>
+                <div class="payment-methods">
+                    <span>Secure payments powered by Razorpay</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Subscription Modal -->
+    <div class="modal hidden" id="subscriptionModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <h3>Start Your Subscription</h3>
+                <div class="progress-indicator">
+                    <div class="progress-step active">1</div>
+                    <div class="progress-step">2</div>
+                    <div class="progress-step">3</div>
+                </div>
+            </div>
+            
+            <!-- Step 1: Plan Selection -->
+            <div class="modal-step active" id="step1">
+                <h4>Choose Your Plan</h4>
+                <div class="plan-options">
+                    <label class="plan-option">
+                        <input type="radio" name="plan" value="monthly">
+                        <div class="plan-details">
+                            <span class="plan-name">Monthly - ₹49/month</span>
+                            <span class="plan-desc">Perfect for getting started</span>
+                        </div>
+                    </label>
+                    <label class="plan-option popular">
+                        <input type="radio" name="plan" value="quarterly" checked>
+                        <div class="plan-details">
+                            <span class="plan-name">Quarterly - ₹99/3 months</span>
+                            <span class="plan-desc">Most Popular • Save ₹48</span>
+                        </div>
+                        <div class="popular-tag">Most Popular</div>
+                    </label>
+                    <label class="plan-option">
+                        <input type="radio" name="plan" value="annual">
+                        <div class="plan-details">
+                            <span class="plan-name">Annual - ₹299/year</span>
+                            <span class="plan-desc">Best Value • Save ₹289</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="btn btn--primary btn--full-width" onclick="nextStep()">Continue</button>
+            </div>
+
+            <!-- Step 2: User Information -->
+            <div class="modal-step" id="step2">
+                <h4>Your Information</h4>
+                <form id="subscriptionForm">
+                    <div class="form-group">
+                        <label class="form-label">Full Name *</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Business Name</label>
+                        <input type="text" class="form-control" name="business">
+                    </div>
+                </form>
+                <div class="step-buttons">
+                    <button class="btn btn--outline" onclick="prevStep()">Back</button>
+                    <button class="btn btn--primary" onclick="nextStep()">Continue</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Payment -->
+            <div class="modal-step" id="step3">
+                <h4>Payment & Confirmation</h4>
+                <div class="order-summary">
+                    <h5>Order Summary</h5>
+                    <div class="summary-item">
+                        <span id="selectedPlan">Quarterly Plan</span>
+                        <span id="selectedPrice">₹99</span>
+                    </div>
+                    <div class="summary-item discount">
+                        <span>First Month Special Discount</span>
+                        <span>-₹20</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total Today</span>
+                        <span id="totalPrice">₹79</span>
+                    </div>
+                </div>
+                <div class="payment-info">
+                    <p>🔒 Secure payment processing</p>
+                    <p>📧 Login details will be sent to your email</p>
+                    <p>🎯 Instant access after payment</p>
+                </div>
+                <div class="step-buttons">
+                    <button class="btn btn--outline" onclick="prevStep()">Back</button>
+                    <button class="btn btn--primary" id="paymentBtn" onclick="processPayment()">
+                        <span class="btn-text">Proceed to Payment</span>
+                        <span class="btn-loading hidden">Processing...</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Preview Modal -->
+    <div class="modal hidden" id="templateModal">
+        <div class="modal-content template-modal">
+            <button class="modal-close" onclick="closeTemplateModal()">&times;</button>
+            <div class="template-preview-content">
+                <div class="template-preview-image">
+                    <div id="templatePreviewPlaceholder">Template Preview</div>
+                </div>
+                <div class="template-info-panel">
+                    <h3 id="templateTitle">Template Name</h3>
+                    <p id="templateDescription">Template description</p>
+                    <div class="template-features">
+                        <div class="feature">✓ High Resolution</div>
+                        <div class="feature">✓ Canva Compatible</div>
+                        <div class="feature">✓ Commercial License</div>
+                    </div>
+                    <button class="btn btn--primary" onclick="openModal()">Get This Template</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
