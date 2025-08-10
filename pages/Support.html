@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PixelPerfect Graphix Support</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#f9fafb; color:#374151; }
+    header { position:sticky; top:0; background:#1e40af; color:#fff; padding:1rem; display:flex; justify-content:space-between; align-items:center; z-index:1000; }
+    header .logo { font-size:1.25rem; font-weight:700; }
+    header .menu-toggle { font-size:1.5rem; background:none; border:none; color:#fff; cursor:pointer; }
+    nav { position:fixed; top:0; right:-100%; width:250px; height:100%; background:#fff; box-shadow:-2px 0 8px rgba(0,0,0,0.1); transition:right .3s; padding:2rem 1rem; }
+    nav.active { right:0; }
+    nav ul { list-style:none; }
+    nav li { margin-bottom:1rem; }
+    nav a { color:#1e40af; text-decoration:none; font-weight:600; }
+    .container { max-width:900px; margin:2rem auto; padding:0 1rem; }
+    h1 { color:#1e40af; margin-bottom:1rem; }
+    h2 { color:#1e40af; margin:1.5rem 0 .75rem; }
+    .grid { display:grid; gap:1rem; }
+    .grid-2 { grid-template-columns:1fr 1fr; }
+    .card { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.1); }
+    .btn { display:inline-block; background:#f97316; color:#fff; padding:.5rem 1rem; border:none; border-radius:6px; cursor:pointer; text-decoration:none; font-weight:600; margin-top:1rem; }
+    .btn:hover { background:#ea580c; }
+    .form-group { margin-bottom:1rem; }
+    .form-group label { display:block; margin-bottom:.25rem; font-weight:600; }
+    .form-group input, .form-group select, .form-group textarea { width:100%; padding:.5rem; border:1px solid #d1d5db; border-radius:4px; }
+    .faq-item { margin-bottom:1rem; }
+    .faq-item summary { cursor:pointer; padding:.5rem; background:#e5e7eb; border-radius:4px; }
+    .video-grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); }
+    .video-card { background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.1); }
+    .video-card img { width:100%; display:block; }
+    .video-card .title { padding:.5rem; }
+    .wa-chat { position:fixed; bottom:20px; right:20px; background:#25d366; color:#fff; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2rem; text-decoration:none; box-shadow:0 2px 6px rgba(0,0,0,0.2); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">PixelPerfect Graphix</div>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+</header>
+<nav id="navMenu">
+  <ul>
+    <li><a href="#support">Support</a></li>
+    <li><a href="#contact-support">Contact Support</a></li>
+    <li><a href="#help-center">Help Center</a></li>
+    <li><a href="#video-tutorials">Video Tutorials</a></li>
+    <li><a href="https://pixelperfectgraphix.vercel.app" class="btn">Back to Home</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <!-- Support Overview -->
+  <section id="support">
+    <h1>Support</h1>
+    <p>We're here to help you 24/7. Choose a resource below:</p>
+    <div class="grid grid-2">
+      <div class="card"><h2>Contact Support</h2><p>Get personalized assistance.</p><a href="#contact-support" class="btn">Contact</a></div>
+      <div class="card"><h2>Help Center</h2><p>Find answers in our knowledge base.</p><a href="#help-center" class="btn">Go to Help Center</a></div>
+      <div class="card"><h2>Video Tutorials</h2><p>Watch step-by-step guides.</p><a href="#video-tutorials" class="btn">Watch Videos</a></div>
+    </div>
+    <details style="margin-top:2rem;">
+      <summary><strong>Top FAQ</strong></summary>
+      <p><strong>Q:</strong> How do I cancel my subscription?<br><strong>A:</strong> Go to your dashboard &gt; Subscription &gt; Cancel.</p>
+    </details>
+  </section>
+
+  <!-- Contact Support -->
+  <section id="contact-support">
+    <h1>Contact Support</h1>
+    <p>If you need help, please fill out the form below or reach out via phone/email.</p>
+    <div class="card">
+      <form id="supportForm">
+        <div class="form-group">
+          <label for="name">Name</label><input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label><input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="plan">Subscription Plan</label>
+          <select id="plan"><option>Monthly</option><option>Quarterly</option><option>Annual</option></select>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label><input type="text" id="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Description</label><textarea id="message" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="file">Attach File (optional)</label><input type="file" id="file">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <p style="margin-top:.5rem;font-size:.9rem;color:#6b7280;">We respond within 24–48 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Help Center -->
+  <section id="help-center">
+    <h1>Help Center</h1>
+    <input type="search" id="helpSearch" placeholder="Search Help Articles…" style="width:100%; padding:.75rem; margin-bottom:1rem; border:1px solid #d1d5db; border-radius:4px;">
+    <h2>Categories</h2>
+    <div class="grid grid-2">
+      <div class="card"><a href="#">Account & Billing</a></div>
+      <div class="card"><a href="#">Subscription Management</a></div>
+      <div class="card"><a href="#">Template Customization</a></div>
+      <div class="card"><a href="#">Technical Troubleshooting</a></div>
+      <div class="card"><a href="#">Refunds & Cancellations</a></div>
+    </div>
+    <h2 style="margin-top:2rem;">Featured Articles</h2>
+    <details class="faq-item"><summary>How to update billing information?</summary><p>Go to Dashboard &gt; Billing &gt; Update Payment Method.</p></details>
+    <details class="faq-item"><summary>How to cancel your subscription?</summary><p>Navigate to Dashboard &gt; Subscription &gt; Cancel Plan.</p></details>
+    <details class="faq-item"><summary>Troubleshooting template download issues</summary><p>Ensure you are logged in and have an active subscription. Contact support if issues persist.</p></details>
+    <p style="margin-top:1rem;"><a href="#contact-support" class="btn">Still can’t find the answer?</a></p>
+  </section>
+
+  <!-- Video Tutorials -->
+  <section id="video-tutorials">
+    <h1>Video Tutorials</h1>
+    <p>Watch our guided walkthroughs to get the most out of PixelPerfect Graphix.</p>
+    <div class="grid grid-2 video-grid">
+      <div class="video-card"><img src="https://via.placeholder.com/400x225" alt=""><div class="title">Getting Started (5:12)</div></div>
+      <div class="video-card"><img src="https://via.placeholder.com/400x225" alt=""><div class="title">Using Canva Templates (4:30)</div></div>
+      <div class="video-card"><img src="https://via.placeholder.com/400x225" alt=""><div class="title">Advanced Customization (6:05)</div></div>
+      <div class="video-card"><img src="https://via.placeholder.com/400x225" alt=""><div class="title">Managing Your Subscription (3:45)</div></div>
+      <div class="video-card"><img src="https://via.placeholder.com/400x225" alt=""><div class="title">Troubleshooting (4:00)</div></div>
+    </div>
+    <p style="margin-top:1rem;"><a href="#contact-support" class="btn">Suggest a Tutorial</a></p>
+  </section>
+
+</main>
+
+<a href="https://wa.me/919250853188" target="_blank" class="wa-chat">💬</a>
+
+<script>
+  document.getElementById('menuToggle').onclick = function(){
+    document.getElementById('navMenu').classList.toggle('active');
+  };
+  document.getElementById('supportForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thank you! Your support request has been submitted.');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
