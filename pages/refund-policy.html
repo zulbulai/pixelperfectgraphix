@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy - PixelPerfect Graphix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #374151;
+            background-color: #f9fafb;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .header h1 {
+            color: #1e40af;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .header .company-name {
+            color: #f97316;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .last-updated {
+            background: #dbeafe;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #1e40af;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .section h3 {
+            color: #374151;
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.75rem 0;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .section ul, .section ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .guarantee-box {
+            background: #dcfce7;
+            border: 1px solid #16a34a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .guarantee-box h3 {
+            color: #16a34a;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .refund-process {
+            background: #f0f9ff;
+            border: 1px solid #0284c7;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .refund-process h4 {
+            color: #0284c7;
+            margin-bottom: 1rem;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 6px;
+            border-left: 4px solid #1e40af;
+        }
+
+        .timeline-number {
+            background: #1e40af;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .contact-info {
+            background: #f3f4f6;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .contact-info h4 {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+
+        .important {
+            color: #dc2626;
+            font-weight: 600;
+        }
+
+        .success {
+            color: #16a34a;
+            font-weight: 600;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #1e40af, #7c3aed);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+        }
+
+        .contact-details {
+            background: linear-gradient(135deg, #1e40af, #7c3aed);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+
+        .contact-details h4 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+        }
+
+        .contact-item strong {
+            min-width: 80px;
+            color: #fbbf24;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .policy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .policy-table th {
+            background: #1e40af;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .policy-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .policy-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .policy-table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header .company-name {
+                font-size: 1.25rem;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-item strong {
+                margin-bottom: 0.25rem;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .timeline-number {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Refund Policy</h1>
+            <div class="company-name">PixelPerfect Graphix</div>
+            <p>Customer Satisfaction & Transparent Refund Process</p>
+        </div>
+
+        <div class="last-updated">
+            <strong>Last Updated:</strong> August 10, 2025
+        </div>
+
+        <div class="contact-details">
+            <h4>📞 Contact Information</h4>
+            <div class="contact-item">
+                <strong>Phone:</strong>
+                <a href="tel:+919250853188">+91 92508 53188</a>
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong>
+                <a href="mailto:zulbulai@gmail.com">zulbulai@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>Address:</strong>
+                <span>273, Sundar Talkies Rd, opp. Sahara India, Chota Chauraha, Ab Nagar, UNNAO, Uttar Pradesh 209801, India</span>
+            </div>
+        </div>
+
+        <div class="guarantee-box">
+            <h3>💯 7-Day Money-Back Guarantee</h3>
+            <p>We stand behind our services with a <strong>7-day money-back guarantee</strong> for new subscriptions. Your satisfaction is our priority!</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Our Refund Commitment</h2>
+            <p>At PixelPerfect Graphix, we are committed to providing high-quality social media templates and exceptional customer service. If you are not completely satisfied with your subscription or custom design services, we offer a fair and transparent refund policy outlined below.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Important:</strong> We believe in the quality of our services and want you to be completely satisfied with your purchase. This refund policy ensures you can try our services with confidence.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Subscription Refund Policy</h2>
+            
+            <h3>2.1 Eligibility for Subscription Refunds</h3>
+            <p>Refunds for subscription plans are available under the following conditions:</p>
+            
+            <table class="policy-table">
+                <thead>
+                    <tr>
+                        <th>Plan Type</th>
+                        <th>Refund Window</th>
+                        <th>Conditions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Monthly (₹49)</strong></td>
+                        <td>7 days from purchase</td>
+                        <td>Full refund if no templates downloaded</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quarterly (₹99)</strong></td>
+                        <td>7 days from purchase</td>
+                        <td>Full refund if minimal usage (under 5 templates)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Annual (₹299)</strong></td>
+                        <td>7 days from purchase</td>
+                        <td>Full refund if minimal usage (under 10 templates)</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>2.2 Subscription Refund Conditions</h3>
+            <ul>
+                <li><span class="success">✅ Eligible:</span> Request made within 7 days of initial purchase</li>
+                <li><span class="success">✅ Eligible:</span> Technical issues preventing service access</li>
+                <li><span class="success">✅ Eligible:</span> Service not as described or advertised</li>
+                <li><span class="important">❌ Not Eligible:</span> After 7-day grace period has expired</li>
+                <li><span class="important">❌ Not Eligible:</span> Extensive use of templates (more than plan limits)</li>
+                <li><span class="important">❌ Not Eligible:</span> Auto-renewal charges (can be cancelled for future)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. Custom Design Services Refund</h2>
+            
+            <h3>3.1 Custom Work Refund Policy</h3>
+            <p>For custom design services (₹50 - ₹499 per design):</p>
+            <ul>
+                <li><strong>Before Work Starts:</strong> 100% refund if cancelled within 2 hours of order</li>
+                <li><strong>During Design Process:</strong> 50% refund if cancelled before first draft delivery</li>
+                <li><strong>After First Draft:</strong> Revisions provided instead of refunds</li>
+                <li><strong>After Final Delivery:</strong> No refunds, but unlimited revisions within 7 days</li>
+            </ul>
+            
+            <h3>3.2 Quality Guarantee</h3>
+            <p>If the delivered custom design significantly deviates from agreed specifications or quality standards, we will:</p>
+            <ol>
+                <li>First attempt to resolve through unlimited revisions</li>
+                <li>If unsatisfied after revisions, provide full refund</li>
+                <li>Maintain this policy for 14 days post-delivery</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>4. How to Request a Refund</h2>
+            
+            <div class="refund-process">
+                <h4>📝 Refund Request Process</h4>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-number">1</div>
+                        <div>
+                            <strong>Contact Us</strong><br>
+                            Email <a href="mailto:zulbulai@gmail.com">zulbulai@gmail.com</a> or call <a href="tel:+919250853188">+91 92508 53188</a> with your refund request
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">2</div>
+                        <div>
+                            <strong>Provide Information</strong><br>
+                            Include order ID, purchase date, plan details, and reason for refund
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">3</div>
+                        <div>
+                            <strong>Review Process</strong><br>
+                            Our team reviews your request within 24-48 hours on business days
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">4</div>
+                        <div>
+                            <strong>Decision & Processing</strong><br>
+                            If approved, refund processed within 3-5 business days via original payment method
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Refund Processing Details</h2>
+            
+            <h3>5.1 Processing Timeline</h3>
+            <ul>
+                <li><strong>Request Review:</strong> 24-48 hours (business days only)</li>
+                <li><strong>Approval Notification:</strong> Within 24 hours of review completion</li>
+                <li><strong>Refund Processing:</strong> 3-5 business days after approval</li>
+                <li><strong>Bank Credit:</strong> Additional 5-7 business days depending on your bank</li>
+            </ul>
+            
+            <h3>5.2 Refund Method</h3>
+            <p>All refunds are processed through the original payment method:</p>
+            <ul>
+                <li><strong>Razorpay Payments:</strong> Automatic refund to original payment source</li>
+                <li><strong>Credit/Debit Cards:</strong> Refunded to the same card used for purchase</li>
+                <li><strong>UPI/Net Banking:</strong> Credited to the original account</li>
+                <li><strong>Digital Wallets:</strong> Refunded to the same wallet</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <p><strong>Note:</strong> We cannot process refunds to different payment methods or accounts than those used for the original purchase for security reasons.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>6. Cancellation vs. Refund</h2>
+            
+            <h3>6.1 Understanding the Difference</h3>
+            <table class="policy-table">
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>What Happens</th>
+                        <th>When to Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cancellation</strong></td>
+                        <td>Stops future renewals, access continues until period ends</td>
+                        <td>Don't want to continue subscription</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Refund</strong></td>
+                        <td>Money back, immediate loss of access</td>
+                        <td>Not satisfied with current service</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>6.2 Cancellation Process</h3>
+            <p>You can cancel your subscription anytime to prevent future charges:</p>
+            <ul>
+                <li>Log into your account dashboard</li>
+                <li>Navigate to subscription settings</li>
+                <li>Click "Cancel Subscription"</li>
+                <li>Or contact us directly for assistance</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>7. Non-Refundable Items</h2>
+            
+            <div class="highlight-box">
+                <p><strong>The following items are not eligible for refunds:</strong></p>
+                <ul>
+                    <li>Subscription renewals (can be cancelled for future cycles)</li>
+                    <li>Templates extensively downloaded and used beyond plan limits</li>
+                    <li>Custom designs delivered as per agreed specifications</li>
+                    <li>Service fees for payment processing</li>
+                    <li>Third-party integration costs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>8. Special Circumstances</h2>
+            
+            <h3>8.1 Technical Issues</h3>
+            <p>If you experience technical problems that prevent you from using our services:</p>
+            <ul>
+                <li>Contact our support team immediately</li>
+                <li>We will first attempt to resolve the technical issue</li>
+                <li>If unresolvable, full refund will be provided regardless of timeline</li>
+            </ul>
+            
+            <h3>8.2 Duplicate Charges</h3>
+            <p>If you are accidentally charged multiple times for the same service:</p>
+            <ul>
+                <li>Contact us within 30 days of the duplicate charge</li>
+                <li>Provide transaction details for verification</li>
+                <li>Immediate refund of duplicate charges will be processed</li>
+            </ul>
+            
+            <h3>8.3 Service Discontinuation</h3>
+            <p>If we discontinue a service during your active subscription:</p>
+            <ul>
+                <li>30-day advance notice will be provided</li>
+                <li>Pro-rated refund for unused subscription time</li>
+                <li>Alternative service options will be offered</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>9. Dispute Resolution</h2>
+            
+            <h3>9.1 Internal Resolution</h3>
+            <p>We encourage resolving any refund disputes directly with our customer service team:</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:zulbulai@gmail.com">zulbulai@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+919250853188">+91 92508 53188</a></p>
+                <p><strong>Business Hours:</strong> Monday to Saturday, 9:00 AM - 6:00 PM IST</p>
+            </div>
+            
+            <h3>9.2 External Resolution</h3>
+            <p>If internal resolution is not satisfactory:</p>
+            <ul>
+                <li>Consumer courts in Unnao, Uttar Pradesh have jurisdiction</li>
+                <li>Online consumer dispute resolution platforms</li>
+                <li>Payment gateway dispute resolution (for payment-related issues)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>10. Policy Updates</h2>
+            
+            <p>We may update this Refund Policy to reflect changes in our services or legal requirements. Updates will be communicated via:</p>
+            <ul>
+                <li>Email notification to registered users</li>
+                <li>Website notice with 30-day advance posting</li>
+                <li>Updated "Last Modified" date on this page</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <p><strong>Your Rights:</strong> Significant policy changes that reduce your refund rights will not apply to existing subscriptions purchased before the change.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>11. Contact Information</h2>
+            
+            <div class="contact-details">
+                <h4>🎯 Refund Support Team</h4>
+                <div class="contact-item">
+                    <strong>Business:</strong>
+                    <span>PixelPerfect Graphix</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong>
+                    <a href="tel:+919250853188">+91 92508 53188</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:zulbulai@gmail.com">zulbulai@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Address:</strong>
+                    <span>273, Sundar Talkies Rd, opp. Sahara India, Chota Chauraha, Ab Nagar, UNNAO, Uttar Pradesh 209801, India</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Hours:</strong>
+                    <span>Monday to Saturday, 9:00 AM - 6:00 PM IST</span>
+                </div>
+            </div>
+            
+            <p>For urgent refund requests or account-related issues, please call us directly during business hours for immediate assistance.</p>
+        </div>
+
+        <div class="section">
+            <div class="guarantee-box">
+                <h3>Our Promise to You</h3>
+                <p>We are committed to fair and transparent business practices. This refund policy is designed to protect your interests while maintaining the sustainability of our business. We value long-term customer relationships over short-term profits.</p>
+            </div>
+            
+            <p class="important">
+                <strong>Effective Date:</strong> This Refund Policy is effective as of August 10, 2025, and applies to all purchases made from PixelPerfect Graphix services.
+            </p>
+        </div>
+
+        <a href="https://pixelperfectgraphix.vercel.app" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
